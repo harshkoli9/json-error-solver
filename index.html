@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Error Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>JSON Error Solver</h1>
+    <p>Paste your JSON code below, and we'll fix any errors:</p>
+
+    <!-- Input textarea for the user to paste JSON -->
+    <textarea id="jsonInput" placeholder="Paste your JSON here..."></textarea>
+
+    <!-- Button to trigger error fixing -->
+    <button onclick="fixJson()">Fix JSON</button>
+
+    <!-- Output section for corrected JSON -->
+    <h2>Corrected JSON:</h2>
+    <textarea id="jsonOutput" readonly></textarea>
+
+    <!-- Copy button to copy the corrected JSON to the clipboard -->
+    <button onclick="copyToClipboard()">Copy Corrected JSON</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
